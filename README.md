@@ -13,3 +13,5 @@ Right-click on the solution -> startup project -> Multiple start-up projects -> 
 The solution is designed to allow you to run both the API and web app together by simply running the solution. Alternatively, you can run the API project and then run the wwwroot/index.html file separately.
 
 Take a look at the VehicleBidding/Screenshots for better understanding. 
+
+Video Tutorial: /VehicleBidding/Screenshots/Tutorial.mp4
