@@ -11,8 +11,8 @@ public class PriceCalculationController : ControllerBase
 {
     private readonly IPriceCalculatorService _priceCalculatorService;
 
-    // Constructor injection for the price calculator service
-    // we can use the primary constructor, but I prefer this way. 
+    // Constructor
+    // we can use this as a primary constructor, but I prefer this way. 
     public PriceCalculationController(IPriceCalculatorService priceCalculatorService)
     {
         _priceCalculatorService = priceCalculatorService;
