@@ -18,7 +18,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: "VueAppPolicy",
         policy =>
         {
-            policy.AllowAnyOrigin() // For development only. Be more specific for production. ex: WithOrigins("http://localhost:5298")
+            //TODO: change the origin to  WithOrigins("http://localhost:5298") while deploying at production
+            policy.AllowAnyOrigin() // For development only. 
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });

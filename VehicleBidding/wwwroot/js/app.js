@@ -15,16 +15,16 @@
                     this.calculationResult = result;
                 } catch (error) {
                     console.error("There was an error calculating the total price:", error);
-                    this.calculationResult = null; // Reset the result in case of error
+                    this.calculationResult = null;
                 }
             } else {
-                this.calculationResult = null; // Reset the result if price is 0 or not valid
+                this.calculationResult = null;
             }
         },
         resetForm() {
-            this.vehiclePrice = 0; // Reset to default or null
-            this.vehicleType = 'Common'; // Reset to default type
-            this.calculationResult = null; // Clear calculation result
+            this.vehiclePrice = 0;
+            this.vehicleType = 'Common'; 
+            this.calculationResult = null; 
         }
     },
     watch: {
