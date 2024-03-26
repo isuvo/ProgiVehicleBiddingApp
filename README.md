@@ -1,7 +1,9 @@
 # BidCalculatorApp
-Open in visual studio. You will get two projects
-1. BidCalculatorApi
-2. VehicleBiddingApp
+To use the BidCalculatorApp, open it in Visual Studio. You will find two projects: 
+1. BidCalculatorApi and
+2. VehicleBiddingApp.
+The first project is an API with a defined endpoint, while the second one is a Vue app. The app captures the API response inside the vue app.
 
-The first project is the API with defined end point and the second one is vue app. The API is getting called by the app and produces the result. 
-The solution is configured in a way that you can simply play the solution and this will the fire the api and the web app at the same time. Or you can run the api project and then run the wwwroot/index.html file separately. 
+The solution is designed to allow you to run both the API and web app together by simply playing the solution. Alternatively, you can run the API project and then run the wwwroot/index.html file separately.
+
+The API runs on port 5238, while the web app runs on port 5296.
