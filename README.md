@@ -3,7 +3,7 @@ To use the BidCalculatorApp, open it in Visual Studio. You will find two project
 1. BidCalculatorApi and
 2. VehicleBiddingApp.
    
-The first project is an API with a defined endpoint, while the second one is a Vue app. The app captures the API response inside the vue app.
+The first project is an API with a defined endpoint, while the second one is a Vue app. This captures the API response inside the vue app.
 
 The API runs on port 5238, while the web app runs on port 5296.
 
