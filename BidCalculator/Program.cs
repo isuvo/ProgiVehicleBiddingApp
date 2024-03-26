@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 // Configure CORS to allow requests from your Vue.js app
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "VueAppPolicy",
+    options.AddPolicy("VueAppPolicy",
         policy =>
         {
             //TODO: change the origin to  WithOrigins("http://localhost:5298") while deploying at production
@@ -40,4 +40,3 @@ app.UseAuthorization();
 app.MapControllers();
 app.MapControllers(); // Map controller routes
 app.Run();
-

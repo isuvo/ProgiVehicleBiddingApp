@@ -1,9 +1,9 @@
 ﻿new Vue({
-    el: '#app',
+    el: "#app",
     data() {
         return {
             vehiclePrice: 0,
-            vehicleType: 'Common',
+            vehicleType: "Common",
             calculationResult: null,
         };
     },
@@ -11,7 +11,8 @@
         async calculateTotal() {
             if (this.vehiclePrice > 0) {
                 try {
-                    const result = await window.MyBiddingApp.apiService.calculatePrice(this.vehiclePrice, this.vehicleType);
+                    const result =
+                        await window.MyBiddingApp.apiService.calculatePrice(this.vehiclePrice, this.vehicleType);
                     this.calculationResult = result;
                 } catch (error) {
                     console.error("There was an error calculating the total price:", error);
@@ -23,8 +24,8 @@
         },
         resetForm() {
             this.vehiclePrice = 0;
-            this.vehicleType = 'Common'; 
-            this.calculationResult = null; 
+            this.vehicleType = "Common";
+            this.calculationResult = null;
         }
     },
     watch: {
